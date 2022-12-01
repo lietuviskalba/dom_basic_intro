@@ -14,8 +14,8 @@
 
 <body>
 
-    <!-- <h1> Document object model (DOM) </h1>
-    <h2> Use Dev tools F12 and check the console tab </h2>
+    <h1> Document object model (DOM) </h1>
+    <h2 id="myRee" class="FindThisClassName"> Use Dev tools F12 and check the console tab </h2>
     <div class="text_content">
         <a href="https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#"
             target="_blank" rel="noopener noreferrer">
@@ -26,23 +26,25 @@
     <div class="text_content">
         <h1> Selector lab </h1>
         <p id="textId"> text with id </p>
-        <p class="textClass"> text with class</p>
+        <p class="textClass"> text with class1</p>
+        <p class="textClass"> text with class2</p>
         <p> List: </p>
         <ul>
-            <li> Item 1 </li>
-            <li> Item 2 </li>
-            <li> Item 3 </li>
+            <li> Item 1 </li>0
+            <li> Item 2 </li>1
+            <li> Item 3 </li>2
         </ul>
-    </div> -->
+    </div>
 
     <div class="text_content">
         <h1> Event lab </h1>
         <p> List: </p>
         <div class="button_container">
+            <input id ="userInput" type="text" placeholder="enter item">
             <button id="addToList"> Add to list</button>
         </div>
-        <ul>
-            <li> Item 1 </li>
+        <ul id="itemList">
+            <li class="1111"> Item 1 </li>
             <li> Item 2 </li>
             <li> Item 3 </li>
         </ul>
@@ -56,6 +58,7 @@
 
     <script src="scripts/selectors.js"></script>> </script>
     <script src="scripts/events.js"></script>> </script>
+    <script src="scripts/extra.js"></script>> </script>
 
 </body>
 

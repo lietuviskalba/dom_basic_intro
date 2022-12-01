@@ -14,7 +14,7 @@ var getClassElements = document.getElementsByClassName("textClass")
 console.log("Find class element: ", getClassElements)
 
 var getOneClassElement = document.getElementsByClassName("textClass")[0]
-console.log("Find FIRST class element: ", getOneClassElement)
+console.log("Find FIRST class element: ", getOneClassElement.style.background = "black")
 
 var getIdElement = document.getElementById("textId")
 console.log("Find id element: ", getIdElement)
@@ -39,8 +39,9 @@ var h1Style = document.querySelector("h1").style;
 console.log("H1 style query selector: ", h1Style)
 console.log("H1 inline style background color changed here, into: ", h1Style.background = "black")
 
-var h2Style = document.querySelector("h2")
-console.log("H2 external style text color changed here: ", h2Style.className = "h2StyleUpdate")
+var h2Style = document.getElementById("myRee")
+console.log("H2 external style text color CURRENT here: ", h2Style.className)
+console.log("H2 external style text color CHANGED here: ", h2Style.className = "h2StyleUpdate")
 
 // >>> Class styles
 var itemClassListOne = document.querySelectorAll("li")[0].classList;
