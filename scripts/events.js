@@ -12,8 +12,10 @@ function GetListInputLength() {
 
 function AddItemToList() {
     var listItem = document.createElement("li");
+
     listItem.appendChild(document.createTextNode(listTextInput.value));
     itemList.appendChild(listItem);
+
     listTextInput.value = "";
 }
 
@@ -24,11 +26,9 @@ function AddToListWithKeypress(event) {
 }
 
 function AddToListWithClick() {
-    return function () {
         if (GetListInputLength() > 0) {
             AddItemToList();
         }
-    };
 }
 
 listButton.addEventListener("click", AddToListWithClick)
