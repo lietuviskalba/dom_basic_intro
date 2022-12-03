@@ -9,14 +9,23 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles/defaultStyle.css">
+    <link rel="stylesheet" href="styles/domStyles.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul class="navUl">
+                <li class="navLi"><a href="index.html">Home</a></li>
+                <li class="navLi"><a href="dinamicBackground.html">Gradient Background</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <h1> Document object model (DOM) </h1>
-    <h2> Use Dev tools F12 and check the console tab </h2>
+    <h2> DOM used in different labs below </h2>
     <div class="text_content">
         <a href="https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#"
             target="_blank" rel="noopener noreferrer">
@@ -25,17 +34,17 @@
     </div>
 
     <!-- Selectors -->
-    <div class="text_content">
+    <div class="text_content" id="selectorBlock">
         <h1> Selector lab </h1>
         <h2 id="h2TagByID" class="FindThisClassName"> H2 tag, use F12 and console to see results</h2>
         <p id="textId"> text with id </p>
         <p class="textClass"> text with class1</p>
         <p class="textClass"> text with class2</p>
         <p> List: </p>
-        <ul>
-            <li> Item 1 </li>0
-            <li> Item 2 </li>1
-            <li> Item 3 </li>2
+        <ul id="listBlock">
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
         </ul>
     </div>
 

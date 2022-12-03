@@ -1,0 +1,115 @@
+.button_container {
+    background-color: #256875;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text_content {
+    text-align: left;
+    background-color: rgba(18, 18, 18, 0.56);
+    color: aliceblue;
+    font-size: 2em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 50px;
+    width: 90%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #033F4A;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+    font-style: italic;
+    color: #E29F60;
+    box-shadow: 4px 4px 8px black;
+    margin: 10px;
+    background-color: #3D7F8B;
+    border-bottom: 5px solid var(--h1_border_color);
+    border-right: 5px solid var(--h1_border_color);
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    color: #C17934;
+    box-shadow: 4px 4px 8px black;
+    margin: 20px auto;
+    width: 70%;
+    background-color: #266976;
+    border-radius: 20px;
+    border-bottom: 5px solid var(--h1_border_color);
+    border-right: 5px solid var(--h1_border_color);
+}
+
+.navUl {
+    margin: 0px;
+    padding: 1em;
+    word-spacing: 10px;
+    background-color: #3D7F8B;
+    border-radius: 10px;
+}
+
+nav ul li {
+    list-style: name;
+    display: inline-block;
+    font-size: 2em;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+nav {
+    background-color: #135663;
+    border-bottom: 3px solid #3D7F8B;
+}
+
+ul {
+    margin: 0px;
+    padding: 1em;
+    word-spacing: 10px;
+}
+
+li {}
+
+a {
+    color: rgb(150, 198, 240);
+}
+
+button {
+    margin: 10px auto;
+    background-color: #125460;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #d28b49;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Times New Roman";
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 200px;
+}
