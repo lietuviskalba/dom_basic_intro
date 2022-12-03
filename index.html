@@ -3,7 +3,8 @@
     [] Look at the .js files
 >> Page: 22
 >> Link to doc: https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#
- -->
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,7 @@
 <body>
 
     <h1> Document object model (DOM) </h1>
-    <h2 id="myRee" class="FindThisClassName"> Use Dev tools F12 and check the console tab </h2>
+    <h2> Use Dev tools F12 and check the console tab </h2>
     <div class="text_content">
         <a href="https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#"
             target="_blank" rel="noopener noreferrer">
@@ -23,8 +24,10 @@
         </a>
     </div>
 
+    <!-- Selectors -->
     <div class="text_content">
         <h1> Selector lab </h1>
+        <h2 id="h2TagByID" class="FindThisClassName"> H2 tag, use F12 and console to see results</h2>
         <p id="textId"> text with id </p>
         <p class="textClass"> text with class1</p>
         <p class="textClass"> text with class2</p>
@@ -36,11 +39,32 @@
         </ul>
     </div>
 
+    <!-- Events (mouse) -->
     <div class="text_content">
-        <h1> Event lab </h1>
+        <h1> Event lab (Mouse events) </h1>
+        <p> Test mouse events (in console): </p>
+        <div class="button_container">
+            <button id="btn1"> Test mouse click in console</button>
+            <button id="btn2"> Test mouse enter in console</button>
+            <button id="btn3"> Test mouse leave in console</button>
+        </div>
+    </div>
+
+    <!-- Events (dark mode) -->
+    <div class="text_content">
+        <h1> Event lab (dark mode) </h1>
+        <p id="darkModeParagraph" class="lightMode"> Toggle this paragraph text color </p>
+        <div class="button_container">
+            <button id="darkModeBtn"> Toggle color</button>
+        </div>
+    </div>
+
+    <!-- Events (item list) -->
+    <div class="text_content">
+        <h1> Event lab (Item list) </h1>
         <p> List: </p>
         <div class="button_container">
-            <input id ="userInput" type="text" placeholder="enter item">
+            <input id="userInput" type="text" placeholder="enter item">
             <button id="addToList"> Add to list</button>
         </div>
         <ul id="itemList">
@@ -56,9 +80,10 @@
         </div>
     </div>
 
-    <!-- <script src="scripts/selectors.js"></script>> </script> -->
-    <script src="scripts/events.js"></script>> </script>
-    <!-- <script src="scripts/extra.js"></script>> </script> -->
+    <script src="scripts/selectors.js"></script>> </script>
+    <script src="scripts/mouseEventExamples.js"></script>> </script>
+    <script src="scripts/toggleDarkMode.js"></script>> </script>
+    <script src="scripts/itemList.js"></script>> </script>
 
 </body>
 

@@ -1,12 +1,15 @@
-// https://developer.mozilla.org/en-US/docs/Web/Events
-// https://developer.mozilla.org/en-US/docs/Web/Events
+/* 
+>> Documentation for JavaScript
+    [] document object model
+    [] selectors
+>> Page: 34
+>> Link to doc: https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#
+*/
 
-// >>> ADD item to list section
 var listTextInput = document.getElementById("userInput");
 var listButton = document.getElementById("addToList");
 var itemList = document.getElementById("itemList");
-var items = document.getElementsByClassName("newItem")
-
+var items = document.getElementsByClassName("newItem");
 
 function GetListInputLength() {
     return listTextInput.value.length;
@@ -19,13 +22,15 @@ function AddItemToList() {
     listItem.className = "newItem"
     listDeleteButton.className = "newItemDelete"
 
-    listDeleteButton.appendChild(document.createTextNode("X"));
+    listDeleteButton.appendChild(document.createTextNode("Delete"));
     listItem.appendChild(listDeleteButton);
 
     listItem.appendChild(document.createTextNode(listTextInput.value));
     itemList.appendChild(listItem);
-}
 
+    // Making the input empty, to not let spam same item and quickly add new ones
+    listTextInput.value = "";
+}
 
 function toggleDoneItems() {
     items.add("done");
@@ -43,11 +48,6 @@ function AddToListWithClick() {
     }
 }
 
-function resolveClickActions(element) {
-    setItemsDone(element);
-    deleteItem(element);
-}
-
 function deleteItem(element) {
     if (element.target.className === "newItemDelete") {
         element.target.parentElement.remove();
@@ -60,23 +60,11 @@ function setItemsDone(element) {
     }
 }
 
+function resolveClickActions(element) {
+    setItemsDone(element);
+    deleteItem(element);
+}
+
 itemList.addEventListener("click", resolveClickActions)
 listButton.addEventListener("click", AddToListWithClick)
 listTextInput.addEventListener("keypress", AddToListWithKeypress)
-
-
-// >>> Testing some events with buttons section
-var clickBtn = document.getElementById("btn1");
-var enterBtn = document.getElementById("btn2");
-var exitBtn = document.getElementById("btn3");
-
-
-function testMouseEvents(button, eventType) {
-    button.addEventListener(eventType, function () {
-        console.log("This button[", button, "] is using event: ", eventType)
-    })
-}
-
-testMouseEvents(clickBtn, "click");
-testMouseEvents(enterBtn, "mouseenter");
-testMouseEvents(exitBtn, "mouseleave");

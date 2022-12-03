@@ -2,6 +2,15 @@
     text-decoration: line-through;
 }
 
+.lightMode{
+    color: #0b0c0c;
+    background-color: #d5d9d9;
+}
+.darkMode{
+    color: #dee5e5;
+    background-color: #070c0c;
+}
+
 .h2StyleUpdate {
     font-size: 70px;
     font-weight: 600;

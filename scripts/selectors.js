@@ -39,7 +39,7 @@ var h1Style = document.querySelector("h1").style;
 console.log("H1 style query selector: ", h1Style)
 console.log("H1 inline style background color changed here, into: ", h1Style.background = "black")
 
-var h2Style = document.getElementById("myRee")
+var h2Style = document.getElementById("h2TagByID")
 console.log("H2 external style text color CURRENT here: ", h2Style.className)
 console.log("H2 external style text color CHANGED here: ", h2Style.className = "h2StyleUpdate")
 
