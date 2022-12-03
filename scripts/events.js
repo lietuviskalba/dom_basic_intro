@@ -45,6 +45,13 @@ function AddToListWithClick() {
 
 function resolveClickActions(element) {
     setItemsDone(element);
+    deleteItem(element);
+}
+
+function deleteItem(element) {
+    if (element.target.className === "newItemDelete") {
+        element.target.parentElement.remove();
+    }
 }
 
 function setItemsDone(element) {
