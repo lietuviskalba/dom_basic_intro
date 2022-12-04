@@ -83,14 +83,12 @@ ul {
     word-spacing: 10px;
 }
 
-li {}
-
 a {
     color: rgb(150, 198, 240);
 }
 
 button {
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: #125460;
     border: 1px solid #d5d9d9;
     border-radius: 8px;
@@ -101,7 +99,7 @@ button {
     display: inline-block;
     font-family: "Times New Roman";
     font-weight: 900;
-    font-size: 20px;
+    font-size: .5em;
     line-height: 29px;
     padding: 0 10px 0 11px;
     position: relative;
@@ -112,4 +110,5 @@ button {
     touch-action: manipulation;
     vertical-align: middle;
     width: 200px;
+    height: 10vh;
 }
