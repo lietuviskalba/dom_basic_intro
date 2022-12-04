@@ -2,7 +2,7 @@ function getBackgroundColorValues(backgroundColors) {
     var currentColorText = document.querySelector(".text_content h2");
 
     currentColorText.textContent = "Current background colors:" + backgroundColors.style.background;
-    currentColorText.style.background = backgroundColors.style.background;
+    currentColorText.style.color = "white";
 }
 
 function setGradient() {
@@ -22,3 +22,4 @@ var color2 = document.getElementById("color2");
 changeColorBackgroundOnColorInput("input", color1);
 changeColorBackgroundOnColorInput("input", color2);
 
+setGradient()
