@@ -6,10 +6,7 @@
 >> Link to doc: https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#
 */
 
-var listTextInput = document.getElementById("userInput");
-var listButton = document.getElementById("addToList");
-var itemList = document.getElementById("itemList");
-var items = document.getElementsByClassName("newItem");
+topicNameSeparator("Item list")
 
 function GetListInputLength() {
     return listTextInput.value.length;
@@ -31,6 +28,8 @@ function AddItemToList() {
     // Making the input empty, to not let spam same item and quickly add new ones
     listTextInput.value = "";
 }
+
+var items = document.getElementsByClassName("newItem");
 
 function toggleDoneItems() {
     items.add("done");
@@ -65,6 +64,10 @@ function resolveClickActions(element) {
     deleteItem(element);
 }
 
+var itemList = document.getElementById("itemList");
+var listTextInput = document.getElementById("userInput");
+var listButton = document.getElementById("addToList");
+
 itemList.addEventListener("click", resolveClickActions)
-listButton.addEventListener("click", AddToListWithClick)
 listTextInput.addEventListener("keypress", AddToListWithKeypress)
+listButton.addEventListener("click", AddToListWithClick)

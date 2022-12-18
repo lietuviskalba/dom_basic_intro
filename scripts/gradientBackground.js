@@ -1,3 +1,5 @@
+topicNameSeparator("Gradient background")
+
 function getBackgroundColorValuesText(backgroundColors) {
     var currentColorText = document.querySelector(".text_content h2");
 
